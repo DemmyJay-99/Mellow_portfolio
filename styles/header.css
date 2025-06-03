@@ -1,0 +1,77 @@
+header{
+    position: fixed;
+}
+
+nav a{
+    margin-right: 6px;
+    margin-left: 6px;
+    margin-top: 40px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 9px;
+    color: #fff;
+    font-weight: 200;
+    transition: text-transform 1s,color .7s;
+}
+
+nav a:hover{
+    color: yellow;
+    /* text-decoration: underline;
+    text-underline-offset: 8px; */
+}
+
+nav .underline{
+    display: inline;
+    background-image: linear-gradient(currentColor,currentColor);
+    background-size: 70% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    padding-bottom: 8px;
+}
+
+nav .underline:hover{
+    background-image: linear-gradient(yellow,yellow);
+}
+
+nav{
+    position: fixed;
+    right: 50px;
+    top: 30px;
+}
+
+.brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    min-height: 10vh;
+}
+
+.brand-left{
+    height: 60px;
+    width: auto;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    border-radius: 50%;
+}
+
+.brand-right{
+    position: fixed;
+    flex: 1;
+    display: flex;
+    justify-content:left;
+    align-items:left;
+    left: 80px;
+    margin-bottom: 110px;
+}
+
+.brand-right span{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.brand-right .highlight{
+    color: yellow;
+}
