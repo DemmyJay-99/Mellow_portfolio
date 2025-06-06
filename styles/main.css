@@ -329,6 +329,10 @@ body{
         padding: 20px;
     }
 
+    .brand{
+        display: inline;
+    }
+
     .head {
         display: none;
     }
@@ -458,42 +462,11 @@ body{
         margin-top: 40%;
         font-size: 2rem;
     }
-}
 
-/* Additional breakpoint for very small devices */
-@media (max-width: 480px) {
-    .intro-left h1 {
-        font-size: 2rem;
-    }
-
-    .intro-left h3 {
-        font-size: 1.1rem;
-    }
-
-    .about h1,
-    .skills h1,
-    .projects .underline {
-        font-size: 1.8rem;
-    }
-
-    .card {
-        padding: 1rem;
-    }
-
-    .skill h2 {
-        font-size: 1.2rem;
-    }
-
-    .skill span {
-        font-size: 0.9rem;
-    }
-}
-
-/* Update mobile navigation styles */
-@media (max-width: 760px) {
     .mobile-nav {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        align-items: center;
         position: fixed;
         top: 0;
         left: 0;
@@ -504,7 +477,26 @@ body{
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
+    /* Show brand on mobile */
+    .brand-left {
+        position: static;
+        height: 40px;
+        width: auto;
+        margin-left: 15px;
+    }
+
+    .brand-right {
+        position: static;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .brand-right span {
+        font-size: 1.5rem;
+    }
+
     .hamburger {
+        margin-left: auto;
         background: none;
         border: none;
         color: #fff;
@@ -606,5 +598,34 @@ body{
     /* Hide the desktop header completely on mobile */
     header {
         display: none;
+    }
+}
+
+/* Additional breakpoint for very small devices */
+@media (max-width: 480px) {
+    .intro-left h1 {
+        font-size: 2rem;
+    }
+
+    .intro-left h3 {
+        font-size: 1.1rem;
+    }
+
+    .about h1,
+    .skills h1,
+    .projects .underline {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .skill h2 {
+        font-size: 1.2rem;
+    }
+
+    .skill span {
+        font-size: 0.9rem;
     }
 }
