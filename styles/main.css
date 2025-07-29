@@ -294,6 +294,9 @@ body{
     background-color: rgb(59, 17, 17);
     margin-top: 40px;
     padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .projects .list{
@@ -309,6 +312,8 @@ body{
     left: 50%;
     line-height: 1.2;
     gap: 30px;
+    max-width: 20.7rem;
+    /* flex: 1; */
 }
 
 .projects .underline{
@@ -404,4 +409,12 @@ body{
 
 .projects .links a:hover{
     text-decoration: underline;
+}
+
+.projects .project-view{
+    margin-top: 3rem;
+    display: flex;
+    flex: 2;
+    place-items: center;
+    place-content: center;
 }
