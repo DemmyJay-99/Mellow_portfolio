@@ -421,6 +421,9 @@ body{
     height: 100%;
 
     button{
+        display: flex;
+        align-items: center;
+        gap: 10px;
         font-size: 1.5rem;
         background-color: yellow;
         padding: 10px;
@@ -435,5 +438,8 @@ body{
     button:hover{
         box-shadow: 2px 5px 10px rgba(195, 255, 0, 0.988);
         transform: translateY(-10px);
+    }
+    button i{
+        color: #fff;
     }
 }
