@@ -1,0 +1,317 @@
+
+@media (max-width: 760px) {
+    section {
+        padding: 20px;
+    }
+
+    .brand{
+        display: inline;
+    }
+
+    .head {
+        display: none;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .intro {
+        padding: 20px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .intro-left {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .intro-left h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .intro-left h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .intro-left p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .intro-right {
+        display: none;
+    }
+
+    .intro button {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 1.1rem;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+        left: 0;
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .about .table {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .about .table-left,
+    .about .table-right {
+        max-width: 100%;
+        margin: 15px 0;
+    }
+
+    .about .table-right {
+        margin-left: 0;
+    }
+
+    .about .table-right .school div {
+        left: auto;
+        right: 10px;
+    }
+
+    .skills {
+        padding: 20px;
+    }
+
+    .skills h1 {
+        font-size: 2rem;
+        left: 0;
+        text-align: center;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .skills .overview {
+        text-indent: 0;
+        padding: 0 10px;
+    }
+
+    .skill-wrapper {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .projects {
+        padding: 20px;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .projects .underline {
+        font-size: 2rem;
+        left: 0;
+        text-align: center;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .projects .label {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    .projects .label h1 {
+        margin-top: 40%;
+        font-size: 2rem;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(59, 17, 17);
+        padding: 4px 12px;
+        height: 44px;
+        min-height: 44px;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .brand {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+        margin: 0;
+        padding: 0;
+        height: 36px;
+    }
+
+    .brand-left {
+        position: static;
+        height: 28px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .brand-right {
+        position: static;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .brand-right span {
+        font-size: 1.1rem;
+        line-height: 1;
+    }
+
+    .hamburger {
+        margin-left: 0;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 2px 5px;
+        z-index: 1001;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 44px;
+        left: 0;
+        right: 0;
+        background-color: rgb(59, 17, 17);
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    .nav-links.active a {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* Stagger the animation for each nav link */
+    .nav-links a:nth-child(1) { transition-delay: 0.1s; }
+    .nav-links a:nth-child(2) { transition-delay: 0.2s; }
+    .nav-links a:nth-child(3) { transition-delay: 0.3s; }
+    .nav-links a:nth-child(4) { transition-delay: 0.4s; }
+    .nav-links a:nth-child(5) { transition-delay: 0.5s; }
+
+    .nav-links a:hover {
+        background-color: rgba(255, 255, 0, 0.1);
+        transform: translateX(5px);
+    }
+
+    /* Add a backdrop when menu is active */
+    .nav-links::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: -1;
+    }
+
+    .nav-links.active::before {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Add padding to the top of the first section to account for smaller mobile nav */
+    .intro {
+        padding-top: 44px;
+    }
+
+    /* Remove the bottom padding we added earlier */
+    .projects {
+        padding-bottom: 20px;
+    }
+
+    /* Hide the desktop header completely on mobile */
+    header {
+        display: none;
+    }
+}
+
+/* Additional breakpoint for very small devices */
+@media (max-width: 480px) {
+    .intro-left h1 {
+        font-size: 2rem;
+    }
+
+    .intro-left h3 {
+        font-size: 1.1rem;
+    }
+
+    .about h1,
+    .skills h1,
+    .projects .underline {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .skill h2 {
+        font-size: 1.2rem;
+    }
+
+    .skill span {
+        font-size: 0.9rem;
+    }
+}
