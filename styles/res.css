@@ -314,4 +314,7 @@
     .skill span {
         font-size: 0.9rem;
     }
+    .projects{
+        place-items: center;
+    }
 }
