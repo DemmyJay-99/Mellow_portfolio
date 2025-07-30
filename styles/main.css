@@ -329,6 +329,7 @@ section{
 .projects .head{
     display: flex;
     place-self: center;
+    place-content: center;
 }
 
 .projects h1{
