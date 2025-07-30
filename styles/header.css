@@ -1,3 +1,9 @@
+:root {
+            --primary-yellow: #FFD100;
+            --dark-black: #121212;
+            --light-black: #1E1E1E;
+            --gray-light: #F0F0F0;
+        }
 header{
     position: fixed;
 }

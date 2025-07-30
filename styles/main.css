@@ -5,6 +5,12 @@
     font-family: "Poppins", sans-serif;
     font-style: normal;
 }
+:root {
+    --primary-yellow: #FFD100;
+    --dark-black: #121212;
+    --light-black: #1E1E1E;
+    --gray-light: #F0F0F0;
+ }
 
 .mobile-nav{
     display: none;
@@ -19,7 +25,7 @@ html{
 }
 
 body{
-    background-color: rgb(153, 0, 0);
+    background-color: var(--dark-black);
     color: #fff;
 }
 
@@ -36,7 +42,8 @@ section{
     padding: 60px;
     min-height: 100vh;
     margin-top: 50px;
-    background-color: rgb(153, 0, 0);
+    background-color: var(--dark-black);
+;
     width: 100%;
 }
 
@@ -129,10 +136,11 @@ section{
 /* About section */
 
 .about{
-    background-color: rgb(59, 17, 17);
+    background-color: var(--light-black);
     margin-top: 40px;
     /* padding: 60px; */
     width: 100%;
+    /* height: 100vh; */
 }
 
 .underline{
@@ -163,10 +171,11 @@ section{
 .about .table-left{
     flex: 1;
     max-width: 400px;
-    border: 3px solid ;
+    border: 1px solid var(--light-black);
     border-radius: 13px;
     padding: 16px;
     line-height: 1.2;
+    box-shadow: 2px 2px 20px 3px rgb(55, 25, 25);
 }
 
 .about .table-left p{
@@ -182,9 +191,11 @@ section{
 .about .table-right{
     flex: 1;
     margin-left: 30px;
-    border: 3px solid;
+    border: 1px solid transparent;
+    border-radius: 10px;
     padding: 16px;
     line-height: 1.2;
+    box-shadow: 2px 2px 20px 3px rgb(55, 25, 25);
 }
 
 .about .table-right h2{
@@ -197,6 +208,10 @@ section{
     border: 2px solid yellow;
     border-radius: 15px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .about .table-right .school div{
@@ -209,8 +224,8 @@ section{
 }
 
 .skills{
-    background-color: rgb(153, 0, 0);
-    margin-top: 40px;
+    /* background-color: var(--light-black); */
+    margin-top: 0px;
     width: 100%;
 }
 
@@ -225,6 +240,7 @@ section{
 
 .skills .overview{
     margin-top: 15px;
+    margin-bottom: 30px;
     display: inline-block;
     text-align: center;
     text-indent: 50px;
@@ -241,7 +257,7 @@ section{
     background: #1c1c1c;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0px 0px 5px #501d1d;
     width: 300px;
     height: 450px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -298,7 +314,7 @@ section{
 }  */
 
 .projects{
-    background-color: #000;
+    background-color: var(--light-black);
     width: 100%;
 }
 
@@ -309,11 +325,13 @@ section{
     column-gap: 0;
 }
 
+.projects .head{
+    display: flex;
+    place-self: center;
+}
+
 .projects h1{
-    display: inline;
-    position:relative;
     font-size: 2.5rem;
-    left: 50%;
     line-height: 1.2;
     gap: 30px;
     max-width: 20.7rem;
@@ -330,7 +348,7 @@ section{
 }
 
 .project-card{
-    background-color: rgb(153, 0, 0);
+    background-color: var(--light-black);
     height: 450px;
     width: 300px;
     border: 3px solid transparent;
