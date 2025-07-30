@@ -445,23 +445,27 @@ section{
     button{
         display: flex;
         align-items: center;
+        place-content: center;
         gap: 10px;
         font-size: 1.5rem;
-        background-color: yellow;
-        padding: 10px;
+        background-color: var(--primary-yellow);
+        padding: 15px;
         border: none;
-        border-radius: 25px;
+        border-radius: 35px;
         transition: all .3s;
+        font-weight: bold;
         a{
             text-decoration: none;
-            color: #fff;
+            color: var(--dark-black);
+            font-size: 1rem;
         }
     }
     button:hover{
-        box-shadow: 2px 5px 10px rgba(195, 255, 0, 0.988);
-        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-3px);
+        background-color: #FFE03D;
     }
     button i{
-        color: #fff;
+        /* color: #fff; */
     }
 }
