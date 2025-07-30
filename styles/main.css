@@ -91,13 +91,13 @@ section{
     transition: all 0.3s ease;
 }
 
-.intro .contact{
+.intro .contacts{
     background-color: yellow;
     margin-left: 13px;
     color: #000;
 }
 
-.intro .contact:hover{
+.intro .contacts:hover{
     box-shadow: 0px 8px 15px rgba(165, 235, 0, 0.3);
     transform: translateY(-2px);
 }
@@ -171,7 +171,7 @@ section{
 .about .table-left{
     flex: 1;
     max-width: 400px;
-    border: 1px solid var(--light-black);
+    border-left: 10px solid var(--gray-light);
     border-radius: 13px;
     padding: 16px;
     line-height: 1.2;
@@ -192,7 +192,8 @@ section{
     flex: 1;
     margin-left: 30px;
     border: 1px solid transparent;
-    border-radius: 10px;
+    border-right: 10px solid var(--gray-light);
+    border-radius: 15px;
     padding: 16px;
     line-height: 1.2;
     box-shadow: 2px 2px 20px 3px rgb(55, 25, 25);
@@ -467,5 +468,21 @@ section{
     }
     button i{
         /* color: #fff; */
+    }
+}
+
+.contact{
+    width: 100%;
+    background-color: var(--dark-black);
+}
+
+.contact .head{
+    display: flex;
+    place-items: center;
+    place-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    h1{
+        font-size: 1.9rem;
     }
 }
