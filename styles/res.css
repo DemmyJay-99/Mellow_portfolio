@@ -279,6 +279,7 @@
     /* Remove the bottom padding we added earlier */
     .projects {
         padding-bottom: 20px;
+        place-items: center;
     }
 
     /* Hide the desktop header completely on mobile */
@@ -313,8 +314,5 @@
 
     .skill span {
         font-size: 0.9rem;
-    }
-    .projects{
-        place-items: center;
     }
 }
