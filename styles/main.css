@@ -556,6 +556,10 @@ section{
         text-decoration: none;
         font-size: 30px;
         color: var(--primary-yellow);
+        transition: all .3s;
+    }
+    a:hover{
+        border-bottom: 3px solid var(--primary-yellow);
     }
 }
 
