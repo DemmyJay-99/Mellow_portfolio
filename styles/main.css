@@ -467,9 +467,6 @@ section{
         transform: translateY(-3px);
         background-color: #FFE03D;
     }
-    button i{
-        /* color: #fff; */
-    }
 }
 
 .contact{
@@ -526,6 +523,12 @@ section{
     place-items: center;
     flex-direction: row;
     gap: 1rem;
+    transition: all .3s;
+}
+
+.info:hover, .info a:hover{
+    color: var(--primary-yellow);
+    transform: translateY(-5px);
 }
 
 .info i{
