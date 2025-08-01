@@ -1,0 +1,31 @@
+:root {
+    --primary-yellow: #FFD100;
+}
+
+
+button div{
+    border-radius: 50%;
+}
+
+.container{
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0.608) 100%);  
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    animation: move infinite .5s linear;
+    display: none;
+}
+
+@keyframes move {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.item{
+    background-color: var(--primary-yellow);
+    width: 80%;
+    height: 80%;
+}

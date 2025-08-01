@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/res.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/loader.css">
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
@@ -390,7 +391,14 @@
 
           <label>Message</label>
           <textarea class="message" rows="3" placeholder="Your message here" id="message"></textarea>      
-          <button type="button" class="message-btn" id="btn" onclick="sendEmail()">Send a message<i class="fa-solid fa-paper-plane"></i></button> 
+          <button type="button" class="message-btn" id="btn" onclick="sendEmail()">
+            <span id="span">Send a message
+            <i class="fa-solid fa-paper-plane"></i>
+            </span>
+            <div class="container" id="container">
+              <div class="item"></div>
+            </div>
+          </button> 
         </form>
       </div>
     </div>
