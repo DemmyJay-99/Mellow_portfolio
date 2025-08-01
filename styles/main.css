@@ -620,6 +620,12 @@ input:active{
     border: none;
     cursor: pointer;
     transition: all .3s;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    gap: 20px;
+    font-size: 1rem;
+    place-items: center;
 }
 
 .message-btn:hover{
