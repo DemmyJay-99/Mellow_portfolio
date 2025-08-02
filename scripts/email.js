@@ -1,6 +1,8 @@
 const btn = document.getElementById('btn');
 const span = document.getElementById('span');
 const container = document.getElementById('container');
+const form = document.getElementById('form');
+let hasSent = false;
 
 
 function showLoader() {
@@ -39,12 +41,21 @@ function sendEmail() {
         message : document.getElementById('message').value,
     };
 
+    if (hasSent) {
+    alert("Message already sent.");
+    return;
+  }
+
     showLoader();
     disableForm();
 
 
 emailjs.send("service_4uxyt5c", "template_ven3kqr", templateParams)
-.then(() => alert("Email sent!")).catch(() => alert("Email not sent!")).finally(() => {
+.then(() => {alert("Email sent!");
+            form.reset();
+            hasSent = true;
+        }).catch(() => {alert("Email not sent!")})
+          .finally(() => {
     hideLoader();
     enableForm();})
 }
