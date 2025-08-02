@@ -19,13 +19,36 @@ nav a{
     color: #fff;
     font-weight: 200;
     transition: text-transform 1s,color .7s;
+    text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover::before{
+    content: "";
+    width: 3rem;
+    height: 2px;
+    top: 12px;
+    position: absolute;
+    background-color: var(--primary-yellow);
+    margin-top: 10px;
+    animation: increase .3s linear;
+}
+
+@keyframes increase {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 1.5rem;
+    }
+    100%{
+        width: 3rem;
+    }
+}
+/* nav a:hover{
     color: yellow;
     /* text-decoration: underline;
     text-underline-offset: 8px; */
-}
+} */
 
 nav .underline{
     display: inline;
