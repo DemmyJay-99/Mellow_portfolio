@@ -61,3 +61,12 @@ footer i{
         color: var(--primary-yellow);
     }
 }
+
+@media (max-width: 480px) {
+    .footer-name{
+        display:none;
+    }
+    footer{
+        width: 100%;
+    }
+}
