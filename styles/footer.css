@@ -48,3 +48,11 @@ footer i{
     display: flex;
     gap: 0;
 }
+
+.footer-links{
+    display:flex;
+    gap: 1.5rem;
+    a{
+        font-size: 15px;
+    }
+}
