@@ -35,11 +35,23 @@ function enableForm() {
 
 function sendEmail() {
     const templateParams = {
-        name : document.getElementById('name').value,
-        email : document.getElementById('email').value,
-        subject : document.getElementById('subject').value,
-        message : document.getElementById('message').value,
+        name : document.getElementById('name').value.trim(),
+        email : document.getElementById('email').value.trim(),
+        subject : document.getElementById('subject').value.trim(),
+        message : document.getElementById('message').value.trim(),
     };
+
+    const { name, email, subject, message } = templateParams;
+
+    if (!name || !email || !subject || !message) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    if (!/^\S+@\S+\.\S+$/.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
 
     if (hasSent) {
     alert("Message already sent.");

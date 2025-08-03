@@ -409,16 +409,16 @@
         <h1>Send me a message</h1>
         <form id="form">
           <label>Your Name</label>
-          <input type="text" placeholder="John Doe" id="name">
+          <input type="text" placeholder="John Doe" id="name" required>
 
           <label>Your E-mail</label>
-          <input type="text" placeholder="example@gmail.com" id="email">
+          <input type="text" placeholder="example@gmail.com" id="email" required>
           
           <label>Subject</label>
-          <input type="text" placeholder="Project Inquiry" id="subject">  
+          <input type="text" placeholder="Project Inquiry" id="subject" required>  
 
           <label>Message</label>
-          <textarea class="message" rows="3" placeholder="Your message here" id="message"></textarea>      
+          <textarea class="message" rows="3" placeholder="Your message here" id="message" required></textarea>      
           <button type="button" class="message-btn" id="btn" onclick="sendEmail()">
             <span id="span">Send a message
             <i class="fa-solid fa-paper-plane"></i>
