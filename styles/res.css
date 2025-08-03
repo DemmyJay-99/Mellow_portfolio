@@ -315,4 +315,7 @@
     .skill span {
         font-size: 0.9rem;
     }
+    .about .table-right, .about .table-left {
+        border: none;
+    }
 }
