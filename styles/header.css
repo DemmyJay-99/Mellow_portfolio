@@ -44,11 +44,7 @@ nav a:hover::before{
         width: 3rem;
     }
 }
-/* nav a:hover{
-    color: yellow;
-    /* text-decoration: underline;
-    text-underline-offset: 8px; */
-} */
+
 
 nav .underline{
     display: inline;

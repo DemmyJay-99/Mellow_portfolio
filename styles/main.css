@@ -27,6 +27,7 @@ html{
 body{
     background-color: var(--dark-black);
     color: #fff;
+    overflow: hidden;
 }
 
 section{
