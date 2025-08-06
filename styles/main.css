@@ -602,12 +602,12 @@ form input, textarea{
     border-radius: 10px;
     border: none;
     padding: 15px;
-    color: var(--dark-black);
-    background-color: var(--gray-light);
+    color: var(--gray-light);
+    background-color: var(--dark-black);
 }
 
-input:active{
-    border: none;
+input:focus-within, textarea:focus-within{
+    border: 1px solid var(--primary-yellow);
     outline: 0;
 }
 
@@ -626,8 +626,10 @@ input:active{
     flex-direction: row;
     place-content: center;
     gap: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     place-items: center;
+    color: var(--gray-light);
 }
 
 .message-btn:hover{
